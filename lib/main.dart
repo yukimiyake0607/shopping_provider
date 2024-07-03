@@ -51,34 +51,38 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
       ),
       bottomNavigationBar: Consumer<BottomNavModel>(
         builder: (context, bottomNavModel, child) {
-          return BottomNavigationBar(
-            currentIndex: bottomNavModel.selectedPageNumber,
-            type: BottomNavigationBarType.fixed,
-            items: const <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: 'ホーム',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.search),
-                label: '探す',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.favorite_outline),
-                label: 'お気に入り',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.search),
-                label: 'カート',
-              ),
-            ],
-            unselectedItemColor: Colors.black,
-            selectedItemColor: Colors.grey,
-            unselectedLabelStyle: const TextStyle(color: Colors.black),
-            selectedLabelStyle: const TextStyle(color: Colors.grey),
-            onTap: (value) {
-              bottomNavModel.updatedPageNumber(value);
-            },
+          return Container(
+            decoration: BoxDecoration(
+                border: Border(top: BorderSide(width: 1, color: Colors.grey))),
+            child: BottomNavigationBar(
+              currentIndex: bottomNavModel.selectedPageNumber,
+              type: BottomNavigationBarType.fixed,
+              items: const <BottomNavigationBarItem>[
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.home_outlined),
+                  label: 'ホーム',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.search),
+                  label: '探す',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.favorite_outline),
+                  label: 'お気に入り',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.search),
+                  label: 'カート',
+                ),
+              ],
+              unselectedItemColor: Colors.black,
+              selectedItemColor: Colors.grey,
+              unselectedLabelStyle: const TextStyle(color: Colors.black),
+              selectedLabelStyle: const TextStyle(color: Colors.grey),
+              onTap: (value) {
+                bottomNavModel.updatedPageNumber(value);
+              },
+            ),
           );
         },
       ),
