@@ -41,9 +41,6 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Page'),
-      ),
       body: Consumer<BottomNavModel>(
         builder: (context, bottomNavModel, child) {
           return _screensList[bottomNavModel.selectedPageNumber];
