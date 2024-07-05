@@ -6,7 +6,13 @@ import 'package:shopping_provider/screens/home_screen.dart';
 import 'package:shopping_provider/screens/product_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (context) => BottomNavModel()),
+      ChangeNotifierProvider(create: (context) => FavoriteModel()),
+    ],
+    child: MainApp(),
+  ));
 }
 
 class MainApp extends StatelessWidget {
@@ -14,11 +20,8 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => BottomNavModel(),
-      child: MaterialApp(
-        home: BottomNavigationScreen(),
-      ),
+    return MaterialApp(
+      home: BottomNavigationScreen(),
     );
   }
 }
