@@ -23,21 +23,36 @@ class HomeScreen extends StatelessWidget {
                 'この夏おすすめの注目アイテム',
                 style: kArticleTitle,
               ),
-              Row(
-                children: [
-                  ItemContainer(
-                    itemImageUrl:
-                        'https://image.salesnauts.com/acrmtsm/img/NcSjyHjc4ERt.jpg?width=768',
-                    itemName: 'プリントTシャツ white',
-                    itemPrice: '14,300',
-                  ),
-                  ItemContainer(
-                    itemImageUrl:
-                        'https://image.salesnauts.com/acrmtsm/img/7PJLjAFhE8jv.jpg?width=768',
-                    itemName: 'プリントTシャツ black',
-                    itemPrice: '14,300',
-                  ),
-                ],
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    ItemContainer(
+                      itemImageUrl:
+                          'https://image.salesnauts.com/acrmtsm/img/NcSjyHjc4ERt.jpg?width=768',
+                      itemName: 'プリントTシャツ white',
+                      itemPrice: '14,300',
+                    ),
+                    ItemContainer(
+                      itemImageUrl:
+                          'https://image.salesnauts.com/acrmtsm/img/7PJLjAFhE8jv.jpg?width=768',
+                      itemName: 'プリントTシャツ black',
+                      itemPrice: '14,300',
+                    ),
+                    ItemContainer(
+                      itemImageUrl:
+                          'https://image.salesnauts.com/acrmtsm/img/eD9Z5TWpSnQX.jpg?width=768',
+                      itemName: 'Belted Wide Shorts',
+                      itemPrice: '29,700',
+                    ),
+                    ItemContainer(
+                      itemImageUrl:
+                          'https://image.salesnauts.com/acrmtsm/img/z9FCaztLTEsA.jpg?width=768',
+                      itemName: 'Nylon Short',
+                      itemPrice: '9,900',
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

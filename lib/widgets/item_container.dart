@@ -14,8 +14,8 @@ class ItemContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 158,
-      padding: EdgeInsets.only(right: 8),
+      width: 150,
+      margin: EdgeInsets.only(right: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
