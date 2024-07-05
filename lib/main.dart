@@ -4,6 +4,7 @@ import 'package:shopping_provider/screens/cart_screen.dart';
 import 'package:shopping_provider/screens/favorite_screen.dart';
 import 'package:shopping_provider/screens/home_screen.dart';
 import 'package:shopping_provider/screens/product_screen.dart';
+import 'models/favorite_model.dart';
 
 void main() {
   runApp(MultiProvider(
