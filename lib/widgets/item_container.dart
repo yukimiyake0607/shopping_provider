@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/favorite_model.dart';
-import '../screens/home_screen.dart';
 
 class ItemContainer extends StatelessWidget {
   String itemImageUrl;
@@ -15,7 +14,8 @@ class ItemContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 150,
+      width: 158,
+      padding: EdgeInsets.only(right: 8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

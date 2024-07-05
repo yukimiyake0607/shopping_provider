@@ -28,7 +28,13 @@ class HomeScreen extends StatelessWidget {
                   ItemContainer(
                     itemImageUrl:
                         'https://image.salesnauts.com/acrmtsm/img/NcSjyHjc4ERt.jpg?width=768',
-                    itemName: 'プリントTシャツ',
+                    itemName: 'プリントTシャツ white',
+                    itemPrice: '14,300',
+                  ),
+                  ItemContainer(
+                    itemImageUrl:
+                        'https://image.salesnauts.com/acrmtsm/img/7PJLjAFhE8jv.jpg?width=768',
+                    itemName: 'プリントTシャツ black',
                     itemPrice: '14,300',
                   ),
                 ],
