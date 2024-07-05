@@ -25,31 +25,65 @@ class HomeScreen extends StatelessWidget {
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                child: Row(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    ItemContainer(
-                      itemImageUrl:
-                          'https://image.salesnauts.com/acrmtsm/img/NcSjyHjc4ERt.jpg?width=768',
-                      itemName: 'プリントTシャツ white',
-                      itemPrice: '14,300',
+                    Row(
+                      children: [
+                        ItemContainer(
+                          itemImageUrl:
+                              'https://image.salesnauts.com/acrmtsm/img/NcSjyHjc4ERt.jpg?width=768',
+                          itemName: 'プリントTシャツ white',
+                          itemPrice: '14,300',
+                        ),
+                        ItemContainer(
+                          itemImageUrl:
+                              'https://image.salesnauts.com/acrmtsm/img/7PJLjAFhE8jv.jpg?width=768',
+                          itemName: 'プリントTシャツ black',
+                          itemPrice: '14,300',
+                        ),
+                        ItemContainer(
+                          itemImageUrl:
+                              'https://image.salesnauts.com/acrmtsm/img/eD9Z5TWpSnQX.jpg?width=768',
+                          itemName: 'Belted Wide Shorts',
+                          itemPrice: '29,700',
+                        ),
+                        ItemContainer(
+                          itemImageUrl:
+                              'https://image.salesnauts.com/acrmtsm/img/z9FCaztLTEsA.jpg?width=768',
+                          itemName: 'Nylon Short',
+                          itemPrice: '9,900',
+                        ),
+                      ],
                     ),
-                    ItemContainer(
-                      itemImageUrl:
-                          'https://image.salesnauts.com/acrmtsm/img/7PJLjAFhE8jv.jpg?width=768',
-                      itemName: 'プリントTシャツ black',
-                      itemPrice: '14,300',
-                    ),
-                    ItemContainer(
-                      itemImageUrl:
-                          'https://image.salesnauts.com/acrmtsm/img/eD9Z5TWpSnQX.jpg?width=768',
-                      itemName: 'Belted Wide Shorts',
-                      itemPrice: '29,700',
-                    ),
-                    ItemContainer(
-                      itemImageUrl:
-                          'https://image.salesnauts.com/acrmtsm/img/z9FCaztLTEsA.jpg?width=768',
-                      itemName: 'Nylon Short',
-                      itemPrice: '9,900',
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        ItemContainer(
+                          itemImageUrl:
+                              'https://tshop.r10s.jp/stylife/cabinet/item/424/mf1424-02_1.jpg?fitin=1500:1800&composite-to=center,center|1500:1800',
+                          itemName: 'Cotton Twill BB Cap',
+                          itemPrice: '5,500',
+                        ),
+                        ItemContainer(
+                          itemImageUrl:
+                              'https://tshop.r10s.jp/stylife/cabinet/item/424/mf1424-02_1.jpg?fitin=1500:1800&composite-to=center,center|1500:1800',
+                          itemName: 'Cotton Twill BB Cap',
+                          itemPrice: '5,500',
+                        ),
+                        ItemContainer(
+                          itemImageUrl:
+                              'https://tshop.r10s.jp/stylife/cabinet/item/424/mf1424-02_1.jpg?fitin=1500:1800&composite-to=center,center|1500:1800',
+                          itemName: 'Cotton Twill BB Cap',
+                          itemPrice: '5,500',
+                        ),
+                        ItemContainer(
+                          itemImageUrl:
+                              'https://tshop.r10s.jp/stylife/cabinet/item/424/mf1424-02_1.jpg?fitin=1500:1800&composite-to=center,center|1500:1800',
+                          itemName: 'Cotton Twill BB Cap',
+                          itemPrice: '5,500',
+                        ),
+                      ],
                     ),
                   ],
                 ),
