@@ -14,15 +14,21 @@ class ItemContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 150,
       margin: EdgeInsets.only(right: 16),
+      width: 150,
+      height: 200,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          GestureDetector(
-            onTap: () {},
-            child: Image.network(
-              itemImageUrl,
+          SizedBox(
+            width: 150,
+            height: 150,
+            child: GestureDetector(
+              onTap: () {},
+              child: Image.network(
+                itemImageUrl,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Text(itemName),
