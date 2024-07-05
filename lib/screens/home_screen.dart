@@ -67,9 +67,9 @@ class HomeScreen extends StatelessWidget {
                         ),
                         ItemContainer(
                           itemImageUrl:
-                              'https://tshop.r10s.jp/stylife/cabinet/item/424/mf1424-02_1.jpg?fitin=1500:1800&composite-to=center,center|1500:1800',
-                          itemName: 'Cotton Twill BB Cap',
-                          itemPrice: '5,500',
+                              'https://store.50910.jp/upload/save_image/03201925_6418348e461ae.jpg',
+                          itemName: 'Spin Cotton Chino Cap',
+                          itemPrice: '9,900',
                         ),
                         ItemContainer(
                           itemImageUrl:

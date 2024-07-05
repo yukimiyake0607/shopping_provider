@@ -14,17 +14,16 @@ class ItemContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 16),
       width: 150,
-      height: 200,
+      margin: EdgeInsets.only(right: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            width: 150,
-            height: 150,
-            child: GestureDetector(
-              onTap: () {},
+          GestureDetector(
+            onTap: () {},
+            child: SizedBox(
+              width: 150,
+              height: 150,
               child: Image.network(
                 itemImageUrl,
                 fit: BoxFit.cover,
@@ -35,18 +34,21 @@ class ItemContainer extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Expanded(child: Text('￥$itemPrice')),
-              Consumer<FavoriteModel>(
-                builder: (context, favoriteModel, child) {
-                  return GestureDetector(
-                    onTap: () {
-                      favoriteModel.getFavorite();
-                    },
-                    child: favoriteModel.isFavorite
-                        ? Icon(Icons.favorite)
-                        : Icon(Icons.favorite_outline),
-                  );
-                },
+              Text('￥$itemPrice'),
+              SizedBox(
+                width: 24,
+                child: Consumer<FavoriteModel>(
+                  builder: (context, favoriteModel, child) {
+                    return GestureDetector(
+                      onTap: () {
+                        favoriteModel.getFavorite();
+                      },
+                      child: favoriteModel.isFavorite
+                          ? Icon(Icons.favorite)
+                          : Icon(Icons.favorite_outline),
+                    );
+                  },
+                ),
               ),
             ],
           ),
