@@ -76,3 +76,11 @@ class ItemContainer extends StatelessWidget {
     );
   }
 }
+
+class FavoriteModel extends ChangeNotifier {
+  bool isFavorite = false;
+  void getFavorite() {
+    isFavorite = !isFavorite;
+    notifyListeners();
+  }
+}
