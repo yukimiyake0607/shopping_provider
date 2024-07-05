@@ -5,3 +5,8 @@ const kAppTitle = TextStyle(
   fontSize: 28,
   fontWeight: FontWeight.bold,
 );
+
+const kArticleTitle = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
+);
