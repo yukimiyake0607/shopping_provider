@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shopping_provider/style.dart';
 
 import '../widgets/item_container.dart';
 
@@ -10,7 +11,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Clothing Store'),
+        title: const Text(
+          'BoutiqueMe',
+          style: kAppTitle
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -31,5 +35,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-
