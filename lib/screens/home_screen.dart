@@ -26,10 +26,11 @@ class HomeScreen extends StatelessWidget {
               Row(
                 children: [
                   ItemContainer(
-                      itemImageUrl:
-                          'https://image.salesnauts.com/acrmtsm/img/NcSjyHjc4ERt.jpg?width=768',
-                      itemName: 'プリントTシャツ',
-                      itemPrice: '14,300')
+                    itemImageUrl:
+                        'https://image.salesnauts.com/acrmtsm/img/NcSjyHjc4ERt.jpg?width=768',
+                    itemName: 'プリントTシャツ',
+                    itemPrice: '14,300',
+                  ),
                 ],
               ),
             ],
